@@ -9,26 +9,44 @@ const Sdata = [
   {
     imgsrc: web,
     title: "web Development",
+    info:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    btnText: "Contact Us",
   },
   {
     imgsrc: android,
     title: "android Development",
+    info:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    btnText: "Contact Us",
   },
   {
     imgsrc: app,
     title: "app Development",
+    info:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    btnText: "Contact Us",
   },
   {
     imgsrc: markting,
     title: "markting Development",
+    info:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    btnText: "Contact Us",
   },
   {
     imgsrc: software,
     title: "software Development",
+    info:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    btnText: "Contact Us",
   },
   {
     imgsrc: digital,
     title: "digital Development",
+    info:
+      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    btnText: "Contact Us",
   },
 ];
 
