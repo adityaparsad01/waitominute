@@ -31,7 +31,7 @@ function About(props) {
   return (
     <React.Fragment>
       <Helmet>
-        <title>FAQ - covid19india.org</title>
+        <title>FAQ - WaitOminute.tk</title>
         <meta
           name="title"
           content="Coronavirus Outbreak in India: Latest Map and Case Count"
