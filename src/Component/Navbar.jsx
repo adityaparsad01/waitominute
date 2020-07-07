@@ -74,9 +74,9 @@ const Navbar = () => {
                         exact
                         activeClassName="menu_active"
                         className="nav-link"
-                        to="/axios"
+                        to="/data"
                       >
-                        faq
+                        PinCode
                       </NavLink>
                     </li>
                   </ul>

@@ -11,10 +11,6 @@ function About(props) {
     getFAQs();
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const getFAQs = () => {
     fetch(DATA_URL)
       .then((response) => {

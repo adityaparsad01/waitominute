@@ -6,10 +6,10 @@ import Contact from "./Contact";
 import About from "./About";
 import Service from "./Service";
 import Axios from "./Axios";
+import Pincode from "./Component/Pincode";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import Footer from "./Footer";
-import "./App.scss";
 
 const App = () => {
   return (
@@ -21,6 +21,7 @@ const App = () => {
         <Route exact path="/service" component={Service} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/axios" component={Axios} />
+        <Route exact path="/data" component={Pincode} />
         <Redirect to="/" />
       </Switch>
       <Footer />
