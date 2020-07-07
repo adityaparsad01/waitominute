@@ -32,10 +32,7 @@ function About(props) {
     <React.Fragment>
       <Helmet>
         <title>FAQ - WaitOminute.tk</title>
-        <meta
-          name="title"
-          content="Coronavirus Outbreak in India: Latest Map and Case Count"
-        />
+        <meta name="title" content="read me about my self" />
       </Helmet>
 
       <div className="About">
