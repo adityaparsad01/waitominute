@@ -6,8 +6,8 @@ const Navbar = () => {
     <>
       <div className="container-fluid nav_bg">
         <div className="row">
-          <div className="col-10 mx-auto">
-            <nav className="navbar navbar-expand-lg navbar-light ">
+          <div className="col-12 mx-auto">
+            <nav className="navbar navbar-expand-lg  navbar-light bg-light">
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">
                   WaitOminute
@@ -67,6 +67,16 @@ const Navbar = () => {
                         to="/contact"
                       >
                         contact
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        exact
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/axios"
+                      >
+                        faq
                       </NavLink>
                     </li>
                   </ul>
