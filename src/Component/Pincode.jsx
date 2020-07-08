@@ -42,7 +42,7 @@ const Pincode = () => {
           <form onSubmit={getSearch} className="my-2 my-lg-0 ">
             <input
               className="form-control mr-sm-2 mt-5 text-center"
-              type="text"
+              type="number"
               value={search}
               onChange={updateSearch}
               placeholder="Enter PinCode For More Details..."
