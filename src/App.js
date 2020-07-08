@@ -22,7 +22,7 @@ const App = () => {
         <Route exact path="/service" component={Service} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/axios" component={Axios} />
-        <Route exact path="/data" component={Pincode} />
+        <Route exact path="/pincode" component={Pincode} />
         <Route exact path="/test" component={Test} />
         <Redirect to="/" />
       </Switch>

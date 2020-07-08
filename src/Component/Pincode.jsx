@@ -32,10 +32,12 @@ const Pincode = () => {
 
   return (
     <>
-      <div className="my-5">
-        <h1 className="text-center">Know Your PinCode</h1>
+      <div className="mt-5">
+        <h1 className="text-center">
+          <strong>Know Your PinCode</strong>
+        </h1>
       </div>
-      <div className="container-fluid">
+      <div className="container">
         <div className="row ">
           <form onSubmit={getSearch} className="my-2 my-lg-0 ">
             <input
