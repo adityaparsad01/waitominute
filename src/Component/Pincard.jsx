@@ -2,7 +2,7 @@ import React from "react";
 
 const Pincard = ({ title, postoffice, state, delivery }) => {
   return (
-    <div className="col-md-4 col-10 mx-auto">
+    <div className="col-md-4 col-sm-12 col-10 mx-auto">
       <div className="card text-white bg-dark mb-3">
         <div className="card-body  text-center">
           <h5>{state}</h5>
