@@ -36,17 +36,17 @@ const Pincode = () => {
         <h1 className="text-center">Know Your PinCode</h1>
       </div>
       <div className="container-fluid">
-        <div className="row">
+        <div className="row ">
           <form onSubmit={getSearch} className="my-2 my-lg-0 ">
             <input
-              className="form-control mr-sm-2 mt-5"
+              className="form-control mr-sm-2 mt-5 text-center"
               type="text"
               value={search}
               onChange={updateSearch}
               placeholder="Enter PinCode For More Details..."
             />
             <button
-              className="btn btn-outline-success my-2 my-sm-"
+              className="btn btn-lg btn-block btn-outline-success my-2"
               type="submit"
             >
               submit
