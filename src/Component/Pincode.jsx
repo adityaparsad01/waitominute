@@ -4,13 +4,13 @@ import Pincard from "./Pincard";
 const Pincode = () => {
   const [pin, setPin] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("110001");
+  const [query, setQuery] = useState("110059");
 
   console.log(pin.pincode);
 
   useEffect(() => {
     getPIN();
-  }, [query]);
+  }, []);
 
   const getPIN = async () => {
     const response = await fetch(
