@@ -7,6 +7,7 @@ import About from "./About";
 import Service from "./Service";
 import Axios from "./Axios";
 import Pincode from "./Component/Pincode";
+import Test from "./Test";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import Footer from "./Footer";
@@ -22,6 +23,7 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/axios" component={Axios} />
         <Route exact path="/data" component={Pincode} />
+        <Route exact path="/test" component={Test} />
         <Redirect to="/" />
       </Switch>
       <Footer />

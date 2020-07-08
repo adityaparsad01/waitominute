@@ -18,7 +18,6 @@ const Pincode = () => {
     );
     const data = await response.json();
     setPin(data.data);
-    console.log(data);
   };
 
   const updateSearch = (e) => {
@@ -33,6 +32,9 @@ const Pincode = () => {
 
   return (
     <>
+      <div className="my-5">
+        <h1 className="text-center">Know Your PinCode</h1>
+      </div>
       <div className="container-fluid">
         <div className="row">
           <form onSubmit={getSearch} className="my-2 my-lg-0 ">
@@ -51,22 +53,26 @@ const Pincode = () => {
             </button>
           </form>
         </div>
-        <div>
-          {pin.map((pin, i) => {
-            return (
-              <>
-                <div className="items-center">
-                  <Pincard
-                    key={pin.office_name}
-                    title={pin.pincode}
-                    postoffice={pin.office_name}
-                    state={pin.state_name}
-                    delivery={pin.delivery_status}
-                  />
-                </div>
-              </>
-            );
-          })}
+      </div>
+      <div className="container-fluid mb-5">
+        <div className="row">
+          <div className="col-10 mx-auto">
+            <div className="row gy-4 ">
+              {pin.map((pin, i) => {
+                return (
+                  <>
+                    <Pincard
+                      key={pin.office_name}
+                      title={pin.pincode}
+                      postoffice={pin.office_name}
+                      state={pin.state_name}
+                      delivery={pin.delivery_status}
+                    />
+                  </>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </>
