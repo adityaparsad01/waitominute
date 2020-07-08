@@ -10,7 +10,7 @@ const Pincode = () => {
 
   useEffect(() => {
     getPIN();
-  }, []);
+  }, [query]);
 
   const getPIN = async () => {
     const response = await fetch(
