@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container-fluid nav_bg">
         <div className="row">
           <div className="col-12 mx-auto">
-            <nav className="navbar navbar-expand-lg  navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg  navbar-light ">
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">
                   WaitOminute

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Pincard from "./Pincard";
+import Pincard from "./Component/Pincard";
+import { Helmet } from "react-helmet";
 
 const Pincode = () => {
   const [pin, setPin] = useState([]);
@@ -32,6 +33,10 @@ const Pincode = () => {
 
   return (
     <>
+      <Helmet>
+        <title>PinCode || WaitOminute</title>
+        <meta name="title" content="Know All About Your PinCode" />
+      </Helmet>
       <div className="mt-5">
         <h1 className="text-center">
           <strong>Know Your PinCode</strong>

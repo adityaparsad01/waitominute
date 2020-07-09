@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -28,6 +29,13 @@ const Contact = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Contact || WaitOminute</title>
+        <meta
+          name="title"
+          content="For More information About Waitominute Contact Us"
+        />
+      </Helmet>
       <div className="my-5">
         <h1 className="text-center">Contact US</h1>
       </div>

@@ -1,10 +1,18 @@
 import React from "react";
 import Card from "./Component/Card";
 import Sdata from "./Component/Sdata";
+import { Helmet } from "react-helmet";
 
 const Service = () => {
   return (
     <>
+      <Helmet>
+        <title>Services || WaitOminute</title>
+        <meta
+          name="title"
+          content="Services Which is provided Bt WaitOminute"
+        />
+      </Helmet>
       <div className="my-5">
         <h1 className="text-center">Our Services</h1>
       </div>
