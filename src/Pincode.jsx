@@ -69,7 +69,7 @@ const Pincode = () => {
                 return (
                   <>
                     <Pincard
-                      key={pin.office_name}
+                      id={pin.office_name}
                       title={pin.pincode}
                       postoffice={pin.office_name}
                       state={pin.state_name}
