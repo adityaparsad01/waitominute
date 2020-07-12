@@ -10,6 +10,7 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 // import Test from "./Test";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./Component/Navbar";
+import loading from "./Img/25.svg";
 import Footer from "./Footer";
 
 const Home = lazy(() => import("./Home"));
@@ -24,7 +25,13 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<div>Data Is Loading ....</div>}>
+      <Suspense
+        fallback={
+          <div className="container-fluid mx-auto text-center">
+            <img src={loading} alt={loading} />
+          </div>
+        }
+      >
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
