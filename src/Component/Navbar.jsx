@@ -10,7 +10,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg  navbar-light ">
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">
-                  WaitOminute
+                  Vilakshya
                 </NavLink>
                 <button
                   className="navbar-toggler"
@@ -44,9 +44,9 @@ const Navbar = () => {
                         exact
                         activeClassName="menu_active"
                         className="nav-link"
-                        to="/service"
+                        to="/products"
                       >
-                        Services
+                        Products
                       </NavLink>
                     </li>
                     <li className="nav-item">
@@ -67,16 +67,6 @@ const Navbar = () => {
                         to="/contact"
                       >
                         contact
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink
-                        exact
-                        activeClassName="menu_active"
-                        className="nav-link"
-                        to="/pincode"
-                      >
-                        PinCode
                       </NavLink>
                     </li>
                   </ul>

@@ -11,9 +11,9 @@ const Home = () => {
         <meta name="title" content="it all About Information" />
       </Helmet>
       <Common
-        h1="Grow your business with"
+        h1="Make Love One Happy With"
         imgsrc={web}
-        visit="/about"
+        visit="/products"
         btn="Get Started"
       />
     </>

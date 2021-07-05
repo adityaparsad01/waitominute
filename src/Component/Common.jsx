@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 const Common = (props) => {
   return (
     <>
@@ -12,10 +13,10 @@ const Common = (props) => {
                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                   <h1>
                     {props.h1}
-                    <strong className="brand-name"> WaitOminute</strong>
+                    <strong className="brand-name"> Vilakshya</strong>
                   </h1>
                   <h2 className="my-3">
-                    We are the team of developer making website
+                    We are Selling Artificial Products in India
                   </h2>
                   <div className="mt-3">
                     <NavLink to={props.visit} className="btn-get-started">
