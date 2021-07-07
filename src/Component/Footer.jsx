@@ -1,5 +1,4 @@
 import React from "react";
-import { Twitter, GitHub, Database, Mail } from "react-feather";
 
 function Footer(props) {
   return (

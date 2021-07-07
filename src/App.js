@@ -3,7 +3,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./Component/Navbar";
-import loading from "./Img/25.svg";
+import loading from "./Img/loading.svg";
 import Footer from "./Component/Footer";
 import {ProductProvider} from './ProductContext'
 
