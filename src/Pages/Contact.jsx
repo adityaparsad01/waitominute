@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact || WaitOminute</title>
+        <title>Contact || Vilakshya</title>
         <meta
           name="title"
           content="For More information About Waitominute Contact Us"

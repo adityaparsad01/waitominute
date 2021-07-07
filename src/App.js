@@ -11,7 +11,7 @@ import {ProductProvider} from './ProductContext'
 const Home = lazy(() => import("./Pages/Home"));
 const Contact = lazy(() => import("./Pages/Contact"));
 const About = lazy(() => import("./Pages/About"));
-const Service = lazy(() => import("./Pages/Service"));
+const Service = lazy(() => import("./Pages/Product"));
 
 
 

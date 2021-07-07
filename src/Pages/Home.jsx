@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Home || WaitOminute</title>
+        <title>Home || Vilakshya</title>
         <meta name="title" content="it all About Information" />
       </Helmet>
       <Common
