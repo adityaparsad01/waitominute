@@ -1,5 +1,5 @@
 import React from "react";
-import web from "../Img/career.svg";
+import web from "../Img/home.svg";
 import Common from "../Component/Common";
 import { Helmet } from "react-helmet";
 
