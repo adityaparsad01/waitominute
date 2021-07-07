@@ -1,6 +1,6 @@
 import React from "react";
-import Aboutimg from "./Img/about.svg";
-import Common from "./Component/Common";
+import Aboutimg from "../Img/about.svg";
+import Common from "../Component/Common";
 import { Helmet } from "react-helmet";
 
 const About = () => {

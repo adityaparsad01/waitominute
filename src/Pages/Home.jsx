@@ -1,6 +1,6 @@
 import React from "react";
-import web from "../src/Img/career.svg";
-import Common from "./Component/Common";
+import web from "../Img/career.svg";
+import Common from "../Component/Common";
 import { Helmet } from "react-helmet";
 
 const Home = () => {
