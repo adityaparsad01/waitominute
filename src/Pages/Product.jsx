@@ -1,16 +1,16 @@
 import React, {useContext} from "react";
 import Card from "../Component/Card";
+import TestCard from "../Component/TextCard"
 import { Helmet } from "react-helmet";
 import {ProductContext} from '../ProductContext'
 
 
 const Service = () => {
   const productsList = useContext(ProductContext)
+  console.log(productsList)
 
-  const field = [];
-  productsList.map((item, idx) => field.push(item.fields));
+ 
 
-  field.map((item, idx) => item.Attachments);
 
   return (
     <>
@@ -28,19 +28,34 @@ const Service = () => {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              {field.map((val, i) => {
-                return (
+            {productsList.map((val, idx) => 
+                 (
                   <>
-                    <Card
-                      key={i}
-                      imgsrc={val.Name}
-                      title={val.Name}
-                      info={val.Name}
-                      btnText={val.price}
+                   <TestCard
+                      key={idx}
+                      imgsrc={val.fields.Attachments}
+                      title={val.fields.Name}
+                      info={val.fields.Name}
+                      price={val.fields.price}
+                      totalPrice={val.fields.mainprice}
                     />
                   </>
-                );
-              })}
+                )
+              )}
+              
+              {/* {productsList.map((val, idx) => 
+                 (
+                  <>
+                    <Card
+                      key={idx}
+                      imgsrc={val.fields.Attachments}
+                      title={val.fields.Name}
+                      info={val.fields.Name}
+                      btnText={val.fields.price}
+                    />
+                  </>
+                )
+              )} */}
             </div>
           </div>
         </div>
