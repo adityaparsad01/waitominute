@@ -9,7 +9,7 @@
     "axios": "^1.6.0",
     "bootstrap": "^5.0.0-alpha1",
     "chart.js": "^2.9.3",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
     "react-columns": "^1.2.1",
