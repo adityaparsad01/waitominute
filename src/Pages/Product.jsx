@@ -13,7 +13,7 @@ const Service = () => {
   return (
     <>
       <Helmet>
-        <title>Products || Vilakshya</title>
+        <title>Products || waitominute</title>
         <meta
           name="title"
           content="Services Which is provided Bt WaitOminute"

@@ -10,7 +10,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg  navbar-light ">
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">
-                  Vilakshya
+                  waitominute
                 </NavLink>
                 <button
                   className="navbar-toggler"

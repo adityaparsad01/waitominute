@@ -2,10 +2,29 @@ import React,{createContext, useState,useEffect} from 'react'
 
 export const ProductContext = createContext()
 
-const API = process.env.REACT_APP_VILAKSHYA_KEY
-const BASE = process.env.REACT_APP_VILAKSHYA_BASE
-
-const URL =`https://api.airtable.com/v0/${BASE}/products?api_key=${API}`;
+// Removed Airtable dependency and replaced API-related code with static data
+const products = [
+  {
+    id: 1,
+    name: "Website Development",
+    description: "We create stunning websites tailored to your needs.",
+  },
+  {
+    id: 2,
+    name: "Web App Development",
+    description: "Build scalable and efficient web applications.",
+  },
+  {
+    id: 3,
+    name: "Android Application",
+    description: "Develop user-friendly Android apps for your business.",
+  },
+  {
+    id: 4,
+    name: "Digital Marketing",
+    description: "Boost your online presence with our marketing strategies.",
+  },
+];
 
 export const ProductProvider = ({children})=>{
   
@@ -17,11 +36,8 @@ export const ProductProvider = ({children})=>{
         setLoading(true); // Start loading
         setError(null); // Reset error
         try {
-            const response = await fetch(URL);
-            if (!response.ok) { // Check for HTTP errors
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const data = await response.json();
+            // Simulate fetching data
+            const data = { records: products };
             // Check if data.records exists and is an array
             if (data && Array.isArray(data.records)) {
                 setProduct(data.records);
@@ -29,7 +45,7 @@ export const ProductProvider = ({children})=>{
                 // Handle cases where records might be missing or not an array
                 console.error("Unexpected data structure received:", data);
                 setProduct([]); // Set to empty array to prevent map errors
-                throw new Error("Unexpected data structure received from API.");
+                throw new Error("Unexpected data structure received.");
             }
         } catch (e) {
             console.error("Failed to fetch products:", e);
