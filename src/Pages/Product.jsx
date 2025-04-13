@@ -6,11 +6,9 @@ import {ProductContext} from '../ProductContext'
 
 
 const Service = () => {
-  const productsList = useContext(ProductContext)
-  console.log(productsList)
-
- 
-
+  // Destructure loading and error states from context
+  const { product: productsList, loading, error } = useContext(ProductContext)
+  // console.log(productsList) // Keep for debugging if needed
 
   return (
     <>
@@ -28,7 +26,11 @@ const Service = () => {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-            {productsList.map((val, idx) => 
+            {/* Conditional Rendering based on loading and error states */}
+            {loading && <p className="text-center">Loading products...</p>}
+            {error && <p className="text-center text-danger">Error loading products: {error}</p>}
+            {!loading && !error && productsList && productsList.length > 0 ? (
+                productsList.map((val, idx) => 
                  (
                   <>
                    <TestCard
@@ -41,9 +43,13 @@ const Service = () => {
                     />
                   </>
                 )
-              )}
+              )
+            ) : (
+              // Show message if not loading, no error, but no products
+              !loading && !error && <p className="text-center">No products found.</p>
+            )}
               
-              {/* {productsList.map((val, idx) => 
+              {/* {productsList.map((val, idx) => // Original commented out code
                  (
                   <>
                     <Card
