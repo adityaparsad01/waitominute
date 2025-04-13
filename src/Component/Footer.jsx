@@ -2,12 +2,10 @@ import React from "react";
 
 function Footer(props) {
   return (
-    <footer>
-      <div className="card-footer text-center">
-        <div className="">
-          Copyright © 2021 by <strong>Vikalshya Enterprise.</strong> All Rights
-          Reserved.
-        </div>
+    <footer className="bg-gray-800 text-white py-4 text-center">
+      <div>
+        Copyright &copy; 2021 by <strong>Vikalshya Enterprise.</strong> All Rights
+        Reserved.
       </div>
     </footer>
   );

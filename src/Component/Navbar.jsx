@@ -4,79 +4,56 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="container-fluid nav_bg">
-        <div className="row">
-          <div className="col-12 mx-auto">
-            <nav className="navbar navbar-expand-lg  navbar-light ">
-              <div className="container-fluid">
-                <NavLink className="navbar-brand" to="/">
-                  waitominute
-                </NavLink>
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  className="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                      <NavLink
-                        exact
-                        activeClassName="menu_active"
-                        className="nav-link active"
-                        aria-current="page"
-                        to="/"
-                      >
-                        Home
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink
-                        exact
-                        activeClassName="menu_active"
-                        className="nav-link"
-                        to="/products"
-                      >
-                        Products
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink
-                        exact
-                        activeClassName="menu_active"
-                        className="nav-link"
-                        to="/about"
-                      >
-                        about
-                      </NavLink>
-                    </li>
-                    <li className="nav-item">
-                      <NavLink
-                        exact
-                        activeClassName="menu_active"
-                        className="nav-link"
-                        to="/contact"
-                      >
-                        contact
-                      </NavLink>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
+      <div className="container mx-auto px-4">
+        <nav className="flex items-center justify-between py-4">
+          <NavLink className="text-2xl font-bold text-gray-800" to="/">
+            waitominute
+          </NavLink>
+          <button
+            className="block lg:hidden text-gray-800 focus:outline-none"
+            type="button"
+            aria-label="Toggle navigation"
+          >
+            <span className="material-icons">menu</span>
+          </button>
+          <div className="hidden lg:flex space-x-4">
+            <NavLink
+              exact
+              activeClassName="font-bold border-b-2 border-blue-500"
+              className="text-gray-600 hover:text-blue-500"
+              to="/"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              exact
+              activeClassName="font-bold border-b-2 border-blue-500"
+              className="text-gray-600 hover:text-blue-500"
+              to="/products"
+            >
+              Products
+            </NavLink>
+            <NavLink
+              exact
+              activeClassName="font-bold border-b-2 border-blue-500"
+              className="text-gray-600 hover:text-blue-500"
+              to="/about"
+            >
+              About
+            </NavLink>
+            <NavLink
+              exact
+              activeClassName="font-bold border-b-2 border-blue-500"
+              className="text-gray-600 hover:text-blue-500"
+              to="/contact"
+            >
+              Contact
+            </NavLink>
           </div>
-        </div>
+        </nav>
       </div>
     </>
   );
 };
+
 export default Navbar;

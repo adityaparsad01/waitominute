@@ -1,42 +1,39 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
 const Common = (props) => {
   return (
-    <>
-      <section id="header" className="d-flex align-items-center">
-        <div className="container-fluid ">
-          <div className="row">
-            <div className="col-10 mx-auto my-5">
-              <div className="row">
-                <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-                  <h1>
-                    {props.h1}
-                    <strong className="brand-name"> waitominute</strong>
-                  </h1>
-                  <h2 className="my-3">
-                    We are Selling Artificial Products in India
-                  </h2>
-                  <div className="mt-3">
-                    <NavLink to={props.visit} className="btn-get-started">
-                      {props.btn}
-                    </NavLink>
-                  </div>
-                </div>
-                <div className="col-lg-6 order-1 order-lg-2 header-img">
-                  <img
-                    src={props.imgsrc}
-                    className="img-fluid animated"
-                    alt="Home page"
-                  />
-                </div>
-              </div>
+    <section className="flex items-center h-screen bg-gray-100">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap items-center">
+          <div className="w-full md:w-1/2 mb-8 md:mb-0">
+            <h1 className="text-4xl font-bold text-gray-800">
+              {props.h1}
+              <span className="text-blue-500"> waitominute</span>
+            </h1>
+            <h2 className="mt-4 text-lg text-gray-600">
+              We are Selling Artificial Products in India
+            </h2>
+            <div className="mt-6">
+              <NavLink
+                to={props.visit}
+                className="inline-block bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600"
+              >
+                {props.btn}
+              </NavLink>
             </div>
           </div>
+          <div className="w-full md:w-1/2">
+            <img
+              src={props.imgsrc}
+              className="w-full h-auto object-cover"
+              alt="Home page"
+            />
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
+
 export default Common;
